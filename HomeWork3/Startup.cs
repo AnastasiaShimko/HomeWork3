@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HomeWork3.Interfaces;
+using HomeWork3.Models;
 
 namespace HomeWork3
 {
@@ -23,7 +25,7 @@ namespace HomeWork3
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllersWithViews(); services.AddSingleton<ITemperatureValidator,CTemperatureValidator>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
