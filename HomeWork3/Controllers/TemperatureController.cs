@@ -20,9 +20,10 @@ namespace HomeWork3.Controllers
             _validator = validator;
         }
 
+        //GET: Temperature
         public IActionResult Index()
         {
-            return Ok();
+            return View();
         }
 
         // GET: Temperature/GetFTemperatureFromC?cTemp=32
@@ -80,12 +81,6 @@ namespace HomeWork3.Controllers
             }
 
             return result;
-        }
-
-        // GET: Temperature/GetFTemperatureFromC?cTemp=32
-        public ViewResult TemperatureConverter(int cTemp)
-        {
-            return View();
         }
     }
 }

@@ -14,5 +14,11 @@ namespace HomeWork3
             Zip,
             Bytes
         }
+
+        public enum TemperatureType
+        {
+            Celsius,
+            Fahrenheit
+        }
     }
 }
