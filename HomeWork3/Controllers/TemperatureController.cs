@@ -45,7 +45,7 @@ namespace HomeWork3.Controllers
             return result;
         }
 
-        private IActionResult GenerateResultFile(string resultText, Enums.FileTypes fileType)
+        public IActionResult GenerateResultFile(string resultText, Enums.FileTypes fileType)
         {
             IActionResult result = null;
 
@@ -65,7 +65,7 @@ namespace HomeWork3.Controllers
             return result;
         }
 
-        private IActionResult GenerateZipArchive(string resultText)
+        public IActionResult GenerateZipArchive(string resultText)
         {
             IActionResult result = null;
             using (var archiveStream = new MemoryStream())

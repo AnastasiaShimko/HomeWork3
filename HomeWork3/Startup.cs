@@ -52,13 +52,6 @@ namespace HomeWork3
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
                     pattern: "{controller=Temperature}/{action=Index}/{id?}");
             });
         }
